@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
-const URL = "mongodb+srv://LoginForm:admin123@cluster0.ll3wx.mongodb.net?retryWrites=true&w=majority";
+const URL = "mongodb+srv://Login:login@cluster0.gquvw.mongodb.net?retryWrites=true&w=majority";
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const secret = "Kh12Lh2mf0";
