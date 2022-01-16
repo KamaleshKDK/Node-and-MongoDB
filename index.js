@@ -93,7 +93,7 @@ app.post("/login", async function (req, res) {
         if (user) {
             let userVerify = await bcrypt.compare(req.body.password, user.password);
             if (userVerify) {
-                let token = jwt.sign({ userid: user._id }, secret, { expiresIn: '2m' });
+                let token = jwt.sign({ userid: user._id }, secret, { expiresIn: '2h' });
                 res.json({ token });
             }
             else {
